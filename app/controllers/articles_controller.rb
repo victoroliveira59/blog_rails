@@ -12,7 +12,7 @@ class ArticlesController < ApplicationController
 		@article = Article.new(title: "...", body: "...")
 
 		if @article.save
-			redirect_to @article # redirect_to fará com que o navegador faça uma nova solicitação
+			redirect_to @article # redirect_to fará com que o navegador faça uma nova solicitação se ele salvar
 		else
 			render :new, status: :unprocessable_entity # enquanto render renderiza a visualização especificada para a solicitação atual.
 		end
