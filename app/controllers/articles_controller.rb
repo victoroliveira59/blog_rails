@@ -16,6 +16,19 @@ class ArticlesController < ApplicationController
 		else
 			render :new, status: :unprocessable_entity # enquanto render renderiza a visualização especificada para a solicitação atual.
 		end
+
+		def edit
+			@article = Article.find(params[:id])
+		end
+		def update
+			@article = Article.find(params[:id])
+
+			if @article.update(article_params)
+				redirect_to @article
+			else
+				render :edit, status: :unprocessable_entity
+			end
+		end
 	end
 
 	private
