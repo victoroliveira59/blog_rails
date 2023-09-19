@@ -1,0 +1,32 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Mini Blog projeto",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"This is a placeholder test command.\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victoroliveira59/blog_rails.git"
+  },
+  "author": "Victor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victoroliveira59/blog_rails/issues"
+  },
+  "homepage": "https://github.com/victoroliveira59/blog_rails#readme",
+  "dependencies": {
+    "@rails/webpacker": "5.4.4",
+    "bootstrap": "^5.3.2",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3"
+  }
+}
